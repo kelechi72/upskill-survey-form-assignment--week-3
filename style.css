@@ -1,0 +1,124 @@
+*{
+    padding: 0; 
+    margin: 0;
+    border: border-box;
+}
+
+body {
+     font-family: 'Times New Roman', Times, serif;
+     font-weight: 400;
+    background-image: url(/image/painting-mountain-lake-with-mountain-background_188544-9126.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+     font-style: normal;
+}
+
+.container {
+    max-width: 600px;
+    background-color: rgba(211, 211, 211, 0.425);
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px lightgray;
+    animation: slide-in 0.5s ease;
+    
+
+}
+
+form {
+display: flex;
+flex-direction: column;
+border-radius: 10px;
+padding: 20px;
+background-color: rgba(173, 216, 230, 0.329);}
+
+h1 {
+    text-align: center;
+    margin: 20px;
+}
+
+.input {
+    margin-bottom: 10px;    
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(128, 128, 128, 0.822);
+    border-radius: 5px;
+    box-sizing: border-box
+}
+
+select,
+input[type="checkbox"],
+input[type="radio"]
+{
+    margin-right: 10px;
+    cursor: pointer;
+
+}
+
+select {
+    width: 100%;
+    padding: 10px;
+}
+
+textarea {
+resize: vertical;
+}
+
+input[type="checkbox"],
+input[type="radio"]
+{
+    vertical-align: middle;
+
+}
+label .radio-label,
+label .checkbox-label {
+    vertical-align: middle;
+    margin-left: 5px;
+    cursor: pointer;
+
+}
+
+
+button{
+    padding: 10px 20px;
+    background-color: blue;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: background-color 0.5s ease;
+}
+
+button:hover {
+    background-color: white;
+    color: blue;
+}
+
+.footer {
+    font-weight: bold;
+    color: black;
+    margin-top: 10px;
+    padding: 0;
+    display: flex;
+    justify-content: normal;
+    height: 10vh;
+}
+
+@keyframes slide-in {
+    0% {
+        transform:translateX(-100%);
+        opacity:0;
+    }
+    100% {transform:translateX(0);
+        opacity:1;
+
+    }
+}
+
